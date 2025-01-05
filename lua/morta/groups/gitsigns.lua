@@ -10,15 +10,15 @@ function M.get(colors, config)
   return {
 
     GitSignsAdd = { fg = colors.string },
-    GitSignsChange = { fg = colors.blue },
+    GitSignsChange = { fg = colors.git_change },
     GitSignsDelete = { fg = colors.red },
 
     GitSignsAddLn = { bg = Util.blend_bg(colors.string, 0.1) },
-    GitSignsChangeLn = { bg = Util.blend_bg(colors.blue, 0.1) },
+    GitSignsChangeLn = { bg = Util.blend_bg(colors.git_change, 0.1) },
     GitSignsDeleteLn = { bg = Util.blend_bg(colors.red, 0.1) },
 
     GitSignsAddNr = { fg = colors.string },
-    GitSignsChangeNr = { fg = colors.blue },
+    GitSignsChangeNr = { fg = colors.git_change },
     GitSignsDeleteNr = { fg = colors.red },
 
     GitSignsAddPreview = { bg = Util.blend_bg(colors.string, 0.1) },
@@ -27,10 +27,9 @@ function M.get(colors, config)
     GitSignsCurrentLineBlame = { fg = colors.comment, italic = true },
 
     GitSignsAddInline = { bg = Util.blend_bg(colors.string, 0.2) },
-    GitSignsChangeInline = { bg = Util.blend_bg(colors.blue, 0.2) },
+    GitSignsChangeInline = { bg = Util.blend_bg(colors.git_change, 0.2) },
     GitSignsDeleteInline = { bg = Util.blend_bg(colors.red, 0.2) },
   }
 end
 
 return M
-

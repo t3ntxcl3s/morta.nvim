@@ -39,7 +39,7 @@ M.colors = {
 
   -- Git colors - Pastel candy markers
   git_add = "#A8E6B3", -- Soft mint candy
-  git_change = "#89C7FF", -- Pastel blue raspberry
+  git_change = "#FFB570", -- Creamy caramel
   git_delete = "#FF9CAF", -- Cotton candy pink
 
   -- Terminal colors - Soft candy shop terminal
