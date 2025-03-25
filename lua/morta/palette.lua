@@ -41,16 +41,6 @@ M.colors = {
   git_add = "#9ece6a", -- Blessed green
   git_change = "#e0af68", -- Calm change
   git_delete = "#F9778B", -- Soft removal
-
-  -- Terminal colors - Soothing palette
-  terminal_black = "#1a1b26",
-  terminal_blue = "#7aa2f7",
-  terminal_cyan = "#2ac3de",
-  terminal_green = "#9ece6a",
-  terminal_magenta = "#bb9af7",
-  terminal_red = "#F9778B",
-  terminal_white = "#c0caf5",
-  terminal_yellow = "#e0af68",
 }
 
 return M

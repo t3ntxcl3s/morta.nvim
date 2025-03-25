@@ -19,6 +19,7 @@ function M.load(colors, config)
     "morta.groups.hipatterns",
     "morta.groups.lazy",
     "morta.groups.lspsaga",
+    "morta.groups.semantic",
     "morta.groups.snacks",
     "morta.groups.treesitter",
     "morta.groups.treesitter_context",
