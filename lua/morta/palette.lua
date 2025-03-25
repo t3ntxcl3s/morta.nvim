@@ -1,46 +1,59 @@
 local M = {}
 
 M.colors = {
-  -- Base colors - Gentle mystical undertones
-  bg = "#1A1B26", -- Soft void background (from Tokyo Night)
-  bg_dark = "#16161e", -- Darker depth
-  bg_highlight = "#292e42", -- Gentle mystical highlight
+  -- Base colors - Gentle mystical undertones with better contrast
+  bg = "#191A26", -- Darker background with less purple tint for better contrast
+  bg_dark = "#14151F", -- Darker depth with less purple tint
+  bg_highlight = "#292B3E", -- More neutral highlight for better text separation
+  bg_float = "#1F2134", -- Floating window background with better contrast
 
-  -- Primary accent colors - Soothing ethereal tones
-  purple = "#bb9af7", -- Soft mystical purple (from Tokyo Night)
-  red = "#F9778B", -- Soft rose sigil
-  blue = "#7aa2f7", -- Calm celestial blue
-  gold = "#e0af68", -- Warm divine gold
+  -- Primary accent colors - Softer ethereal tones
+  purple = "#BC95F9", -- Softer mystical purple
+  red = "#F7678C", -- Softer rose sigil
+  blue = "#7AA2F7", -- Softer celestial blue
+  gold = "#E0AF68", -- Softer divine gold
 
-  -- Text colors - Gentle contrast
-  fg = "#c0caf5", -- Soft ethereal white (from Tokyo Night)
-  fg_dark = "#a9b1d6", -- Calm secondary
-  fg_gutter = "#3b4261", -- Subtle shadow
+  -- Text colors - Enhanced contrast for better readability
+  fg = "#D2DAFD", -- Softer ethereal white (still with good contrast)
+  fg_dark = "#A9B1D6", -- Slightly softer calm secondary
+  fg_gutter = "#5A6377", -- Enhanced gutter text (better contrast)
+  
+  -- UI elements - Soft mystical accents with better accessibility
+  border = "#454964", -- Enhanced borders (meets 3:1 for UI components)
+  cursor = "#BC95F9", -- Matching softer purple
+  selection = "#2F3555", -- Darker selection for better visibility
+  none = "NONE", -- Transparent value
 
-  -- UI elements - Soft mystical accents
-  border = "#29394f", -- Gentle borders
-  cursor = "#bb9af7", -- Matching soft purple
-  selection = "#2e3c64", -- Calm selection
+  -- Syntax highlighting - Softer divine palette
+  string = "#9ECE6A", -- Softer nature green
+  keyword = "#F7678C", -- Softer rose sigil
+  func = "#7AA2F7", -- Softer arcane runes
+  constant = "#E0AF68", -- Softer warm amber
+  type = "#2AC3DE", -- Softer cyan
+  variable = "#D2DAFD", -- Softer gentle spirit (matches main fg)
+  comment = "#6E738D", -- Enhanced whispers (meets minimum contrast)
 
-  -- Syntax highlighting - Soothing divine palette
-  string = "#9ece6a", -- Gentle nature green
-  keyword = "#F9778B", -- Soft rose sigil
-  func = "#7aa2f7", -- Calm arcane runes
-  constant = "#ff9e64", -- Warm amber
-  type = "#2ac3de", -- Serene cyan
-  variable = "#c0caf5", -- Gentle spirit
-  comment = "#565f89", -- Quiet whispers
+  -- Special highlights - Softer signals
+  warning = "#E0AF68", -- Softer warm warning
+  error = "#F7678C", -- Softer soft error
+  info = "#7AA2F7", -- Softer calm info
+  hint = "#2AC3DE", -- Softer serene hint
 
-  -- Special highlights - Gentle signals
-  warning = "#e0af68", -- Warm warning
-  error = "#F9778B", -- Soft error
-  info = "#7aa2f7", -- Calm info
-  hint = "#1abc9c", -- Serene hint
-
-  -- Git colors - Gentle markers
-  git_add = "#9ece6a", -- Blessed green
-  git_change = "#e0af68", -- Calm change
-  git_delete = "#F9778B", -- Soft removal
+  -- Git colors - Softer markers
+  git_add = "#9ECE6A", -- Softer blessed green
+  git_change = "#E0AF68", -- Softer calm change
+  git_delete = "#F7678C", -- Softer soft removal
+  
+  -- Additional colors for UI consistency
+  diff = {
+    add = "#2B3328", -- Background for additions (warm green undertone)
+    change = "#333340", -- Background for changes (subtle warm undertone)
+    delete = "#37292E", -- Background for deletions (warm red undertone)
+  },
 }
+
+-- Set alias colors for backward compatibility
+M.colors.gray = M.colors.fg_gutter
+M.colors.cyan = M.colors.type
 
 return M
