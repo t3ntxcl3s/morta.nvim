@@ -23,7 +23,6 @@ function M.get(colors, config)
     BlinkCmpMenuBorder          = { fg = colors.blue, bg = colors.bg_dark },
     BlinkCmpSignatureHelp       = { fg = colors.fg, bg = colors.bg_dark },
     BlinkCmpSignatureHelpBorder = { fg = colors.blue, bg = colors.bg_dark },
-    
     -- LSP Kind Groups
     BlinkCmpKindField           = { fg = colors.blue, bg = colors.none },
     BlinkCmpKindProperty        = { fg = colors.blue, bg = colors.none },
@@ -51,9 +50,8 @@ function M.get(colors, config)
     BlinkCmpKindColor           = { fg = colors.red, bg = colors.none },
     BlinkCmpKindTypeParameter   = { fg = colors.type, bg = colors.none },
   }
-  
+
   return ret
 end
 
 return M
-

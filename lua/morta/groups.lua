@@ -14,7 +14,6 @@ function M.load(colors, config)
   -- Load plugin highlight groups
   local plugins = {
     "morta.groups.blink_cmp",
-    "morta.groups.cmp",
     "morta.groups.gitsigns",
     "morta.groups.hipatterns",
     "morta.groups.lazy",
