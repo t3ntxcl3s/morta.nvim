@@ -23,6 +23,9 @@ function M.load(colors, config)
     "morta.groups.treesitter",
     "morta.groups.treesitter_context",
     "morta.groups.trouble",
+    "morta.groups.kinds",
+    "morta.groups.render_markdown",
+    "morta.groups.cmp",
   }
 
   for _, plugin in ipairs(plugins) do
