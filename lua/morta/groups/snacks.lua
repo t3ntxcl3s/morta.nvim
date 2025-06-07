@@ -68,15 +68,16 @@ function M.get(colors, config)
     SnacksPickerPickWinCurrent = { fg = colors.fg, bg = colors.purple, bold = true },
     SnacksPickerPickWin       = { fg = colors.fg, bg = colors.selection, bold = true },
   }
-  
+
   -- Add rainbow indentation colors if available
   if colors.rainbow then
     for i, color in ipairs(colors.rainbow) do
       ret["SnacksIndent" .. i] = { fg = color, nocombine = true }
     end
   end
-  
+
   return ret
 end
 
-return M 
+return M
+

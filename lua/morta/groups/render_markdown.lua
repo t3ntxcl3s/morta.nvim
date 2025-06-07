@@ -27,7 +27,6 @@ function M.get(c, _opts)
   }
 
   for i, color in ipairs(heading_colors) do
-    ret["RenderMarkdownH" .. i .. "Bg"] = { bg = Util.blend_bg(color, 0.1) }
     ret["RenderMarkdownH" .. i .. "Fg"] = { fg = color, bold = true }
   end
   return ret

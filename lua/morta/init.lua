@@ -29,6 +29,7 @@ local defaults = {
     gitsigns = true,
     render_markdown = true,
     snacks = true,
+    mini_diff = true,
     hipatterns = true,
   },
 }

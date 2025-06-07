@@ -22,6 +22,7 @@ function M.load(colors, config)
     "morta.groups.snacks",
     "morta.groups.treesitter",
     "morta.groups.treesitter_context",
+    "morta.groups.mini_diff",
     "morta.groups.trouble",
     "morta.groups.kinds",
     "morta.groups.render_markdown",
