@@ -54,6 +54,8 @@ function M.get_highlights(colors, config)
   add_hl("SpellLocal", { undercurl = true, sp = colors.blue })
   add_hl("NonText", { fg = colors.fg_gutter })
   add_hl("SpecialKey", { fg = colors.purple })
+  add_hl("WinBar", { bg = colors.bg_dark })
+  add_hl("WinBarNC", { bg = colors.bg_dark })
 
   add_hl("Comment", { fg = colors.comment, italic = config.styles.comments.italic, bold = config.styles.comments.bold })
   add_hl("Constant", { fg = colors.constant, bold = config.styles.constants.bold })

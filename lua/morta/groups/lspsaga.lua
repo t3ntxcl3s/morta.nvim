@@ -22,6 +22,9 @@ function M.get(colors, config)
     ReferencesCount = { fg = colors.purple },
     ReferencesIcon = { fg = colors.blue },
     TargetWord = { fg = colors.cyan },
+
+    SagaFileName = { fg = colors.fg },
+    SagaFolderName = { fg = colors.fg },
   }
 end
 

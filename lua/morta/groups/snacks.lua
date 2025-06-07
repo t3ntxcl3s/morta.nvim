@@ -13,22 +13,22 @@ function M.get(colors, config)
     SnacksNotifierBorderDebug = { fg = colors.comment, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierIconDebug   = { fg = colors.comment },
     SnacksNotifierTitleDebug  = { fg = colors.comment },
-    
+
     SnacksNotifierError       = { fg = colors.fg, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierBorderError = { fg = colors.error, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierIconError   = { fg = colors.error },
     SnacksNotifierTitleError  = { fg = colors.error },
-    
+
     SnacksNotifierInfo        = { fg = colors.fg, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierBorderInfo  = { fg = colors.info, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierIconInfo    = { fg = colors.info },
     SnacksNotifierTitleInfo   = { fg = colors.info },
-    
+
     SnacksNotifierTrace       = { fg = colors.fg, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierBorderTrace = { fg = colors.purple, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierIconTrace   = { fg = colors.purple },
     SnacksNotifierTitleTrace  = { fg = colors.purple },
-    
+
     SnacksNotifierWarn        = { fg = colors.fg, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierBorderWarn  = { fg = colors.gold, bg = config.transparent_background and colors.none or colors.bg },
     SnacksNotifierIconWarn    = { fg = colors.gold },
@@ -50,7 +50,7 @@ function M.get(colors, config)
     SnacksScratchDesc         = "SnacksProfilerBadgeInfo",
     SnacksProfilerIconTrace   = { bg = Util.blend_bg(colors.fg_dark, 0.3), fg = colors.fg_dark },
     SnacksProfilerBadgeTrace  = { bg = Util.blend_bg(colors.fg_dark, 0.1), fg = colors.fg_dark },
-    
+
     -- Other
     SnacksIndent              = { fg = colors.fg_gutter, nocombine = true },
     SnacksIndentScope         = { fg = colors.blue, nocombine = true },
@@ -58,7 +58,7 @@ function M.get(colors, config)
     SnacksInputIcon           = { fg = colors.blue },
     SnacksInputBorder         = { fg = colors.gold },
     SnacksInputTitle          = { fg = colors.gold },
-    
+
     -- Picker
     SnacksPickerInputBorder   = { fg = colors.constant, bg = colors.bg_dark },
     SnacksPickerInputTitle    = { fg = colors.constant, bg = colors.bg_dark },

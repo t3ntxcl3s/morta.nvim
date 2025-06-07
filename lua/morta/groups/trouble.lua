@@ -9,7 +9,7 @@ function M.get(c, _config)
   return {
     TroubleText   = { fg = c.fg_dark },
     TroubleCount  = { fg = c.purple, bg = c.fg_gutter },
-    TroubleNormal = { fg = c.fg, bg = c.bg_dark }, -- Changed bg_sidebar to bg_dark
+    TroubleNormal = { fg = c.fg, bg = c.bg_dark },
   }
 end
 
